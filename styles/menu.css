@@ -1,11 +1,15 @@
+@font-face{
+    font-family: 'Montserrat';
+    src:url(/fuentes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
 body{
     margin: 0;
     padding: 0;
     font-size: 17px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 :root{
-    --background-color: rgb(42, 2, 90);
+    --background-menu: rgb(13, 0, 69);
     --text-color: white;
 }
 nav{
@@ -13,11 +17,33 @@ nav{
     flex-direction: row;
     justify-content: end;
     gap: 2vw;
-    background-color: var(--background-color);
+    background-color: var(--background-menu);
     color: var(--text-color);
-    padding-block: 10px;
+    padding-block: 15px;
     padding-right: 3vw;
     position: sticky;
     top: 0;
     border-bottom: 2px solid white;
+}
+
+nav > a{
+    letter-spacing: 0.5px;
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*Animacion subrallado de elementos del menu*/
+nav > a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+nav > a:hover:after{
+    width: 100%;
 }
