@@ -1,9 +1,12 @@
+:root{
+    --background-color: rgb(34, 0, 136);
+    --text-color: white;
+}
 /**************************GENERAL**************************/
 .seciones{
     margin-top: 6vh;
     margin-left: 10vh;
     width: 90vw;
-    border: 1px solid black;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -20,15 +23,20 @@ h2{
 .bajoh2{
     margin-left: 2vw;
     height: 6px;
-    width: 90px;
+    width: 100px;
     background-color: aqua;
     margin-bottom: 2em;
     border-radius: 20%;
     transition: all ease 1s;
 }
-/*Pequeña animacion al pasar por encima del h2*/
-h2:hover ~ .bajoh2{
-    width: 11rem;
+/*Pequeña animacion al pasar por encima de quien soy*/
+#quiensoy:hover ~ .bajoh2{
+    width: 13.1rem;
+    transform: scale(1);
+}
+/*Pequeña animacion al pasar por encima de estudios*/
+#estudios:hover ~ .bajoh2{
+    width: 11.3rem;
     transform: scale(1);
 }
 /**************************QUIEN SOY**************************/
@@ -51,8 +59,13 @@ h2:hover ~ .bajoh2{
 /*Texto*/
 .qsspan{
     display: flex;
-    font-size: 1.3rem;
-    padding-inline: 2vw;
+    font-size: 1.2srem;
+    padding-left: 3vw;
+    padding-right: 7vw;
+    padding-block: 1vh;
+    color: rgb(88, 87, 87);
+    font-family: sans-serif, Arial, Helvetica;
+    
 }
 /**************************ESTUDIOS**************************/
 /*Caja padre*/
@@ -71,13 +84,15 @@ h2:hover ~ .bajoh2{
     margin-top: 50px;
     padding: 20px;
     padding-inline: 40px;
-    background-color: rgba(225, 225, 225, 0.7);
+    background-color: var(--background-color);
+    color: var(--text-color);
     transition: background-color 0.8s;
     border-radius: 5%;
 }
 /*Cunado pasamos por encima de una caja de estudios*/
 .campoEstudios:hover{
-    background-color: rgba(159, 153, 153, 0.766);
+    background-color: rgb(152, 9, 177);
+   
     
 }
 /*Caja para los iconos de lenguajes*/
