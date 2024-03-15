@@ -1,3 +1,4 @@
+/**************************GENERAL**************************/
 .seciones{
     margin-top: 6vh;
     margin-left: 10vh;
@@ -5,21 +6,36 @@
     border: 1px solid black;
     height: 70vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 /*Titulos secundarios*/
 h2{
     font-size: 2.5rem;
     padding-left: 2vw;
     margin-bottom: 10px;
+    margin-top: 70px;
+    width: 230px;
 }
-.bajodiv{
+/*Ralla azul bajo h2*/
+.bajoh2{
     margin-left: 2vw;
     height: 6px;
     width: 90px;
     background-color: aqua;
     margin-bottom: 2em;
     border-radius: 20%;
+    transition: all ease 1s;
+}
+/*Pequeña animacion al pasar por encima del h2*/
+h2:hover ~ .bajoh2{
+    width: 11rem;
+    transform: scale(1);
+}
+/**************************QUIEN SOY**************************/
+.qs{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
 }
 /*Div de la foto*/
 .qsfoto{
@@ -37,4 +53,61 @@ h2{
     display: flex;
     font-size: 1.3rem;
     padding-inline: 2vw;
+}
+/**************************ESTUDIOS**************************/
+/*Caja padre*/
+.estudio-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+/*Titulos 3 de estudios*/
+.campoEstudios > h3{
+    text-align: center;
+}
+/*Cada caja de losa estudios*/
+.campoEstudios{
+    margin-top: 50px;
+    padding: 20px;
+    padding-inline: 40px;
+    background-color: rgba(225, 225, 225, 0.7);
+    transition: background-color 0.8s;
+    border-radius: 5%;
+}
+/*Cunado pasamos por encima de una caja de estudios*/
+.campoEstudios:hover{
+    background-color: rgba(159, 153, 153, 0.766);
+    
+}
+/*Caja para los iconos de lenguajes*/
+.esIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    width: 18vw;
+}
+/*Caja de imagenes*/
+.esimg{
+    width: 3vw;
+    transition:  1s;
+}
+/*Imagen al 100% de su caja padre*/
+.esimg > img{
+    width: 100%;
+}
+
+/*.esimg:hover{
+    width: 70px;
+    transform: scale(1);
+}*//*Crecen todas las cajas*/
+
+/*Texto*/
+.estxt{
+    text-align: center;
+}
+.estado{
+    text-align: center;
+    padding-top: 20px
 }

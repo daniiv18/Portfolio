@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <!--Menu-->
     <nav>
-        <a>Inicio</a>
+        <a href="#">Inicio</a>
         <a href="#quiensoy">Quien soy</a>
-        <a>Estudios</a>
-        <a>Contacto</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#contacto">Contacto</a>
     </nav>
     <!--Cabezera de presentacion-->
     <header>
@@ -29,21 +30,62 @@
         </div>
     </header>
     <main>
+        <!--Quien soy-->
         <section class="seciones">
-            <div class="qsfoto">
-                <span class="qsspan">Aqui va una foto</span>
+            <div class="qs">
+                <div class="qsfoto">
+                    <span class="qsspan">Aqui va una foto</span>
+                </div>
+                <div class="qstxt">
+                    <h2 id="quiensoy">Quien soy</h2>
+                    <div class="bajoh2"></div>
+                    <div>
+                        <span class="qsspan">¡Hola a todos! Mi nombre es Dani y soy un estudiante de Desarrollo de Aplicaciones Web.</span>
+                        <span class="qsspan">Soy una persona apasionada por la tecnología y el mundo digital desde muy joven, decidí estudiar DAW porque me encanta la idea de poder crear páginas web.</span>
+                        <span class="qsspan">Durante mi tiempo como estudiante de DAW, he adquirido habilidades en lenguajes como HTML, CSS, Java, y también he trabajado con 
+                        frameworks populares como Bootstrap. Además, tengo experiencia en bases de datos utilizando tecnologías como MySQL y Oracle.</span>
+                    </div>
+                </div>
             </div>
-            <div class="qstxt">
-                <h2 id="quiensoy">Quien soy</h2>
-                <div class="bajodiv"></div>
-                <div>
-                    <span class="qsspan">¡Hola a todos! Mi nombre es Dani y soy un estudiante de Desarrollo de Aplicaciones Web.</span>
-                    <span class="qsspan">Soy una persona apasionada por la tecnología y el mundo digital desde muy joven, decidí estudiar DAW porque me encanta la idea de poder crear páginas web</span>
-                    <span class="qsspan">Durante mi tiempo como estudiante de DAW, he adquirido habilidades en lenguajes como HTML, CSS, Java, y también he trabajado con 
-                    frameworks populares como Bootstrap. Además, tengo experiencia en bases de datos utilizando tecnologías como MySQL y Oracle.</span>
+        </section>
+        <!--Estudios-->
+        <section class="seciones">
+            <h2 id="estudios">Estudios</h2>
+            <div class="bajoh2"></div>
+            <div class="estudio-container">
+                <div class="campoEstudios">
+                    <h3>Grado Medio</h3>
+                    <p class="estxt">Sistemas Microinformáticos y Redes</p>
+                    <div class="esIcon">
+                        <div class="esimg"><img src="img/html.png" alt="logo del leguaje html 5"></div>
+                        <div class="esimg"><img src="img/css.png" alt="logo del leguaje css 3"></div>
+                        <div class="esimg"><img src="img/python.png" alt="logo del leguaje de progrmación de python"></div>
+                    </div>
+                    <p class="estado">Finalizado (2023)</p>
+                </div>
+                <div class="campoEstudios">
+                    <h3>Titulacion Oracle</h3>
+                    <p class="estxt">Database Programming with SQL</p>
+                    <div class="esIcon">
+                        <div class="esimg"><img src="img/sql.png" alt="logo del leguaje de bases de datos sql de oracle"></div>
+                    </div>
+                    <p class="estado">En curso (2024)</p>
+                </div>
+                <div class="campoEstudios">
+                    <h3>Grado Superior</h3>
+                    <p class="estxt">Desarrolo de Aplicaicones Web</p>
+                    <div class="esIcon">
+                        <div class="esimg"><img src="img/java.png" alt="logo del leguaje de programación java"></div>
+                        <div class="esimg"><img src="img/json.png" alt="logo del leguaje json"></div>
+                        <div class="esimg"><img src="img/mysql.png" alt="logo del leguaje de bases de datos mysql"></div>
+                    </div>
+                    <p class="estado">En curso (2024 - 2025)</p>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
